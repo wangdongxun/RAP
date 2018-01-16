@@ -1,5 +1,8 @@
-# RAP ![](https://api.travis-ci.org/thx/RAP.svg)
 
+# RAP ![](https://api.travis-ci.org/thx/RAP.svg)
+### wdx modify from 0.14.2-SNAPSHOT
+    1.增加作者和状态
+    2.完善html导出
 ### What is RAP?
 RAP can help WEB engineers manage API document efficiently by supplying a GUI edit tool, it can generate mock data, validate real request by analyzing API structure, make API doc as a strong dependency with the development workflow. With structured API data, RAP can do more while we can do less.
 
