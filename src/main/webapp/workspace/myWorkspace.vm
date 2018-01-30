@@ -76,19 +76,19 @@
                 <span class="glyphicon glyphicon-trash"></span>
                 取消
             </button>
-            #if($accessable)
+            #if($accessable && $curUser.account!="frontend")
                 <button id="btnEdit" type="button" class="btn btn-primary btn-sm" data-toggle="tooltip"
                         data-placement="bottom" onclick="ws.switchToEditMode(); return false;" title="锁定并进入文档编辑状态">
                     <span class="glyphicon glyphicon-pencil"></span>
                     编辑
                 </button>
-
-                <button id="btnVersion" type="button" class="btn btn-default btn-sm" data-toggle="tooltip"
-                        data-placement="bottom" onclick="ws.version(); return false;" title="查看或切换到历史版本">
-                    <span class="glyphicon glyphicon-refresh"></span>
-                    版本
-                </button>
             #end
+            <button id="btnVersion" type="button" class="btn btn-default btn-sm" data-toggle="tooltip"
+                    data-placement="bottom" onclick="ws.version(); return false;" title="查看或切换到历史版本">
+                <span class="glyphicon glyphicon-refresh"></span>
+                版本
+            </button>
+
             <button id="btnExitVersion" type="button" class="btn btn-default btn-sm" data-toggle="tooltip"
                     data-placement="bottom" onclick="ws.exitVersion(); return false;" style="display: none;"
                     title="退出版本查看">
